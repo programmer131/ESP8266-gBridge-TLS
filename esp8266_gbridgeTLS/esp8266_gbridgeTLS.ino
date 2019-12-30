@@ -28,8 +28,8 @@
 
 // Update these with values suitable for your network.
 
-const char* ssid = "Home2";
-const char* password = "helloworld";
+const char* ssid = "....";
+const char* password = ".......";
 const char* mqtt_server = "mqtt.gbridge.io";
 
 WiFiClientSecure espClient;
@@ -86,7 +86,7 @@ void reconnect() {
     String clientId = "ESP8266Client-";
     clientId += String(random(0xffff), HEX);
     // Attempt to connect
-    if (client.connect(clientId.c_str(),"gbridge-u4537","helloworld")) {
+    if (client.connect(clientId.c_str(),"gbridge-uaername","gbridge-mqtt_password")) {
       Serial.println("connected");
       client.publish("gBridge/u4537/d14818/onoff/set", "1");
       // Once connected, publish an announcement...
