@@ -1,4 +1,7 @@
 # ESP8266-gBridge-TLS
+
+since gBridge services will stop from March 2020, look for alternative solutions.
+
 demonstration: https://youtu.be/IFFwjumkqvs
 
 ESP8266 connects to gBridge MQTT over TLS
